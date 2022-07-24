@@ -1,0 +1,108 @@
+<!-- <div class="shadow p-1 mb-5 bg-white rounded">
+  <nav class="navbar navbar-light" style="background-color: #ffffff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">
+        <a class="navbar-brand" routerLink="/home"><img src=" width="620%" height="150" />    
+          </a> -->
+          <!-- class="me-2" height="100" alt="" loading="lazy" />
+        <small>SkyWays</small> -->
+      <!-- </a>
+
+      
+
+
+      <nav class="navbar navbar-light" style="background-color: #ffffff;">
+        <div class="container-fluid">
+          <a class="navbar-brand"  routerLink="/cart"> -->
+             <!-- <img src="https://flightbooking.blob.core.windows.net/image/th.jpg" class="me-2" height="88" alt="" 
+              loading="lazy" /> -->
+
+          <!-- </a>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-lg mb-0" style="background-color: #fef7f7;">
+    <div class="container-fluid"> <br><br><I><B>SkyWays</B>  </I>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="btn btn-outline-success mx-1" routerLink="/home">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+         
+          <li class="nav-item">
+            <a class="btn btn-outline-success mx-1" *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-success mx-1" *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+<router-outlet></router-outlet> -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home"><img src="../../assets/Airplane.jpg" width="5%" />  
+      <I><u>  SkyWays</u></I></a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="btn btn-outline-success mx-1" *ngIf="LoggedIn(false)" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-success mx-1" *ngIf="LoggedIn(false)" routerLink="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" routerLink="/account">My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-success mx-1"  *ngIf="LoggedIn(true)" (click)="LogOut()">Logout</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+
+ 
+
+   
+   <form class="card-body-centre" >
+
+   
+    
+  
+   
+   
+
+
+</form>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+ <footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white"> &copy;SkyWay 2022 All Rights Reserved.</p>
+  </div>
+</footer> 
+
+
+ 
